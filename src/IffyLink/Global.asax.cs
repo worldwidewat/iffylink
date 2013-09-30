@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 using WorldWideWat.IffyLink.App_Start;
 
@@ -12,6 +13,7 @@ namespace WorldWideWat.IffyLink
 
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
             DapperConfig.Configure();
         }
     }

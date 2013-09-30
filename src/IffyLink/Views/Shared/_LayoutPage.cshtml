@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @System.Web.Optimization.Scripts.Render("~/bundles/js")
+    @System.Web.Optimization.Styles.Render("~/bundles/css")
+</head>
+<body>
+    <div class="container">
+        <h3><a href="~/">Welcome to IffyLink!</a></h3>
+        <em>A volatile URL-shortener. Nothing lasts forever, why should short links?</em>
+        <h5>
+            <marquee>(proto-Alpha - functionality not guaranteed/complete.)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                That's right, marquee.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suck it.</marquee>
+        </h5>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <h4>More?</h4>
+        <div>
+            <ul class="footer-links">
+                <li><a href="http://twitter.com/pwninstein">@@pwninstein</a> |</li>
+                <li><a href="http://upboat.me">upboat.me</a> |</li>
+                <li><a href="http://datetimetostring.com">datetime &rarr; tostring</a> |</li>
+                <li><a href="http://tickstodatetime.com">ticks &rarr; datetime</a> |</li>
+                <li><a href="http://github.com/worldwidewat/iffylink">github</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

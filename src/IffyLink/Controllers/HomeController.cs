@@ -20,7 +20,7 @@ namespace WorldWideWat.IffyLink.Controllers
         }
 
         [HttpPost]
-        public ActionResult Iffify(IffifyModel model)
+        public ActionResult Index(IffifyModel model)
         {
             if (!ModelState.IsValid)
             {

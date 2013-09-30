@@ -1,11 +1,23 @@
 ﻿@model WorldWideWat.IffyLink.Models.IffifyModel
 
-<h3>Welcome!</h3>
-
-@using (Html.BeginForm("Iffify", "Home", FormMethod.Post))
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { role = "form" }))
 {
-    @Html.TextBoxFor(m => m.Link, new { placeholder = "change this"})
+    <div class="form-group">
+        @Html.LabelFor(m => m.Link)
+        @Html.TextBoxFor(m => m.Link, new { @class = "form-control", @placeholder = ModelMetadata.FromLambdaExpression(m => m.Link, ViewData).Watermark })
+        @Html.ValidationMessageFor(m => m.Link)
+    </div>
     
-    @Html.TextBoxFor(m => m.Alias, new { placeholder = "to this" })
-    <input type="submit" value="Shorten"/>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Alias)
+        @Html.TextBoxFor(m => m.Alias, new { @class = "form-control", @placeholder = ModelMetadata.FromLambdaExpression(m => m.Alias, ViewData).Watermark })
+        @Html.ValidationMessageFor(m => m.Alias)
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(m => m.Expiration)
+        @Html.TextBoxFor(m => m.Expiration, new { @class = "form-control datepicker", @placeholder = ModelMetadata.FromLambdaExpression(m => m.Expiration, ViewData).Watermark })
+        @Html.ValidationMessageFor(m => m.Expiration)
+    </div>
+    <input type="submit" class="btn btn-default" value="Make it so" />
 }

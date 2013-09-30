@@ -1,0 +1,16 @@
+﻿.field-validation-error {
+    color: red;
+}
+
+h3 a:hover {
+    text-decoration: none;
+}
+
+ul.footer-links {
+    list-style: none;
+    padding: 0;
+}
+    ul.footer-links li {
+        display: inline;
+        margin: 0;
+    }
