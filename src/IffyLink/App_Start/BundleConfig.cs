@@ -6,15 +6,14 @@ namespace WorldWideWat.IffyLink.App_Start
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.UseCdn = true;
-
             const string jqueryCdnPath = "http://code.jquery.com/jquery-2.0.3.min.js";
 
-            bundles.Add(new ScriptBundle("~/bundles/js", jqueryCdnPath).Include(
+            bundles.Add(new ScriptBundle("~/bundles/js").Include(
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/bootstrap-datetimepicker.js",
-                "~/Scripts/site.js"));
+                "~/Scripts/site.js")
+                );
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                 "~/Content/bootstrap/bootstrap.css",

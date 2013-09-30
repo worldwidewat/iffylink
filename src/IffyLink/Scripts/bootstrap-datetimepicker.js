@@ -1,9 +1,9 @@
-﻿/* =========================================================
+/* =========================================================
  * bootstrap-datetimepicker.js
  * =========================================================
  * Copyright 2012 Stefan Petre
  * Improvements by Andrew Rowls
- * Improvements by Sébastien Malot
+ * Improvements by S�bastien Malot
  * Improvements by Yun Lai
  * Project URL : http://www.malot.fr/bootstrap-datetimepicker
  *
