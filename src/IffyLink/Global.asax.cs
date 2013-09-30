@@ -1,5 +1,4 @@
-﻿using System.Web.Http;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 using WorldWideWat.IffyLink.App_Start;
 
@@ -11,9 +10,9 @@ namespace WorldWideWat.IffyLink
         {
             AreaRegistration.RegisterAllAreas();
 
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            DapperConfig.Configure();
         }
     }
 }
