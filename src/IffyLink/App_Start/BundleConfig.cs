@@ -6,8 +6,6 @@ namespace WorldWideWat.IffyLink.App_Start
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            const string jqueryCdnPath = "http://code.jquery.com/jquery-2.0.3.min.js";
-
             bundles.Add(new ScriptBundle("~/bundles/js").Include(
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/bootstrap.js",
